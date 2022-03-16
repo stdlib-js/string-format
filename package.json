@@ -36,12 +36,9 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/assert-is-number": "^0.0.x",
-    "@stdlib/assert-is-string": "^0.0.x",
-    "@stdlib/assert-is-uppercase": "^0.0.x"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@stdlib/assert-is-string": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
     "@stdlib/constants-float64-ninf": "^0.0.x",
     "@stdlib/constants-float64-pi": "^0.0.x",

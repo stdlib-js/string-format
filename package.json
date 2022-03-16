@@ -43,7 +43,6 @@
     "@stdlib/assert-is-uppercase": "^0.0.x",
     "@stdlib/math-base-assert-is-finite": "^0.0.x",
     "@stdlib/math-base-assert-is-nan": "^0.0.x",
-    "@stdlib/math-base-special-abs": "^0.0.x",
     "@stdlib/string-lowercase": "^0.0.x",
     "@stdlib/string-repeat": "^0.0.x",
     "@stdlib/string-replace": "^0.0.x",

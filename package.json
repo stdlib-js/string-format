@@ -40,7 +40,6 @@
     "@stdlib/assert-is-number": "^0.0.x",
     "@stdlib/assert-is-string": "^0.0.x",
     "@stdlib/assert-is-uppercase": "^0.0.x",
-    "@stdlib/math-base-assert-is-finite": "^0.0.x",
     "@stdlib/math-base-assert-is-nan": "^0.0.x"
   },
   "devDependencies": {

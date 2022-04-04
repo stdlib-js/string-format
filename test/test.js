@@ -584,7 +584,7 @@ tape( 'the function returns a formatted string (`G` specifier)', function test( 
 
 	str = '%3.G';
 	actual = format( str, 100 );
-	expected = '100';
+	expected = '1E+02';
 	t.strictEqual( actual, expected, 'returns expected output' );
 
 	str = 'beep %G';
@@ -612,7 +612,7 @@ tape( 'the function returns a formatted string (`G` specifier, alternate form)',
 
 	str = '%#3.G';
 	actual = format( str, 100 );
-	expected = '100.'; // always contains a decimal point!
+	expected = '1.E+02'; // always contains a decimal point!
 	t.strictEqual( actual, expected, 'returns expected output' );
 
 	str = 'beep %#G';

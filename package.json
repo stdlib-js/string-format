@@ -36,7 +36,10 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@stdlib/string-base-format-interpolate": "^0.0.x",
+    "@stdlib/string-base-format-tokenize": "^0.0.x"
+  },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.0.x",
     "@stdlib/bench": "^0.0.x",

@@ -30,30 +30,14 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/string-format
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var format = require( '@stdlib/string-format' );
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
 ```
 
 #### format( str, ...args )
@@ -230,8 +214,13 @@ out = format( str, 7 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var format = require( '@stdlib/string-format' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
 
 var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'
@@ -247,6 +236,10 @@ out = format( '%10s %10s', 'a', 'b' );
 
 out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 // returns 'a b c'
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -270,7 +263,7 @@ out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 

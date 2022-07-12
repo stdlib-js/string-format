@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.0.3-deno/mod.js';
 ```
 
 #### format( str, ...args )
@@ -215,7 +215,7 @@ out = format( str, 7 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.0.3-deno/mod.js';
 
 var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'

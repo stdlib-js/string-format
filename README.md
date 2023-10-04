@@ -50,7 +50,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-format = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js' )
+format = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -62,7 +62,7 @@ var format = require( 'path/to/vendor/umd/string-format/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -253,7 +253,7 @@ out = format( str, 7 );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.1.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 

@@ -41,11 +41,11 @@
     "@stdlib/string-base-format-tokenize": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.1.0",
+    "@stdlib/assert-is-string": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/constants-float64-ninf": "^0.1.0",
-    "@stdlib/constants-float64-pi": "^0.1.0",
-    "@stdlib/constants-float64-pinf": "^0.1.0",
+    "@stdlib/constants-float64-ninf": "^0.1.1",
+    "@stdlib/constants-float64-pi": "^0.1.1",
+    "@stdlib/constants-float64-pinf": "^0.1.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"

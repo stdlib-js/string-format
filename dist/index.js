@@ -1,7 +1,7 @@
-"use strict";var i=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var s=i(function(q,a){
-function l(r){return typeof r=="string"}a.exports=l
-});var g=i(function(y,o){
-var p=require('@stdlib/string-base-format-interpolate/dist'),v=require('@stdlib/string-base-format-tokenize/dist'),m=s();function u(r){var e,t,n;if(!m(r))throw new TypeError(u('1Of3F',r));for(e=v(r),t=new Array(arguments.length),t[0]=e,n=1;n<t.length;n++)t[n]=arguments[n];return p.apply(null,t)}o.exports=u
-});var f=g();module.exports=f;
+"use strict";var i=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var u=i(function(c,n){
+function g(e){return typeof e=="string"}n.exports=g
+});var o=i(function(q,s){
+var p=require('@stdlib/string-base-format-interpolate/dist'),l=require('@stdlib/string-base-format-tokenize/dist'),m=u();function a(e){var r,t;if(!m(e))throw new TypeError(a('1Of3F',e));for(r=[l(e)],t=1;t<arguments.length;t++)r.push(arguments[t]);return p.apply(null,r)}s.exports=a
+});var v=o();module.exports=v;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map

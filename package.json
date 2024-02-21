@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-format",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Insert supplied variable values into a format string.",
   "license": "Apache-2.0",
   "author": {
@@ -37,18 +37,18 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/string-base-format-interpolate": "^0.2.0",
-    "@stdlib/string-base-format-tokenize": "^0.2.0"
+    "@stdlib/string-base-format-interpolate": "^0.2.1",
+    "@stdlib/string-base-format-tokenize": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.1.1",
-    "@stdlib/constants-float64-ninf": "^0.1.1",
-    "@stdlib/constants-float64-pi": "^0.1.1",
-    "@stdlib/constants-float64-pinf": "^0.1.1",
+    "@stdlib/assert-is-string": "^0.2.0",
+    "@stdlib/constants-float64-ninf": "^0.2.0",
+    "@stdlib/constants-float64-pi": "^0.2.0",
+    "@stdlib/constants-float64-pinf": "^0.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.1.2"
+    "@stdlib/bench-harness": "^0.2.0"
   },
   "engines": {
     "node": ">=0.10.0",

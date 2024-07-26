@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-format",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Insert supplied variable values into a format string.",
   "license": "Apache-2.0",
   "author": {
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/string-base-format-interpolate": "^0.2.1",
-    "@stdlib/string-base-format-tokenize": "^0.2.1"
+    "@stdlib/string-base-format-tokenize": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.2.1",

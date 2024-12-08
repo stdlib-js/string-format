@@ -41,14 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-format
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
+var format = require( '@stdlib/string-format' );
 ```
 
 #### format( str, ...args )
@@ -89,21 +107,21 @@ var out = format( str, 'foo', 'bar', 'baz' );
 
 The following table summarizes the supported specifiers:
 
-| type | description                        | example      |
-| ---- | ---------------------------------- | ------------ |
-| s    | string                             | beep boop    |
-| c    | character                          | a            |
-| d, i | signed decimal integer             | -12          |
-| u    | unsigned decimal integer           | 390          |
-| b    | unsigned binary integer            | 11011011     |
-| o    | unsigned octal integer             | 510          |
-| x    | unsigned hexadecimal (lowercase)   | 7b           |
-| X    | unsigned hexadecimal (uppercase)   | 7B           |
-| f, F | decimal floating point             | 390.24       |
-| e    | scientific notation (lowercase)    | 3.9e+1       |
-| E    | scientific notation (uppercase)    | 3.9E+1       |
-| g    | shortest representation (`e`/`f`)  | 3.9          |
-| G    | shortest representation (`E`/`F`)  | 3.9          |
+| type | description                       | example   |
+| ---- | --------------------------------- | --------- |
+| s    | string                            | beep boop |
+| c    | character                         | a         |
+| d, i | signed decimal integer            | -12       |
+| u    | unsigned decimal integer          | 390       |
+| b    | unsigned binary integer           | 11011011  |
+| o    | unsigned octal integer            | 510       |
+| x    | unsigned hexadecimal (lowercase)  | 7b        |
+| X    | unsigned hexadecimal (uppercase)  | 7B        |
+| f, F | decimal floating point            | 390.24    |
+| e    | scientific notation (lowercase)   | 3.9e+1    |
+| E    | scientific notation (uppercase)   | 3.9E+1    |
+| g    | shortest representation (`e`/`f`) | 3.9       |
+| G    | shortest representation (`E`/`F`) | 3.9       |
 
 ```javascript
 var str = '%i written as a binary number is %b.';
@@ -196,8 +214,8 @@ The `precision` may be specified as a decimal integer or as an asterisk characte
 
 -   For `s` specifiers, the `precision` specifies the maximum number of characters to be written to the output.
 -   For floating point specifiers (`f`, `F`, `e`, `E`), the `precision` specifies the number of digits after the decimal point to be written to the output (by default, this is `6`).
--  For `g` and `G` specifiers, the `precision` specifies the maximum number of significant digits to be written to the output.
--  For integer specifiers (`d`, `i`, `u`, `b`, `o`, `x`, `X`), the `precision` specifies the minimum number of digits to be written to the output. If the value to be written is shorter than this number, the result is padded with zeros on the left. The value is not truncated even if the result is longer. For 
+-   For `g` and `G` specifiers, the `precision` specifies the maximum number of significant digits to be written to the output.
+-   For integer specifiers (`d`, `i`, `u`, `b`, `o`, `x`, `X`), the `precision` specifies the minimum number of digits to be written to the output. If the value to be written is shorter than this number, the result is padded with zeros on the left. The value is not truncated even if the result is longer. For 
 
 Alternatively, the `precision` may be specified as an asterisk character (`*`), in which case the argument preceding the conversion specification is used as the minimum number of digits.
 
@@ -226,7 +244,7 @@ out = format( str, 7 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@deno/mod.js';
+var format = require( '@stdlib/string-format' );
 
 var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'
@@ -265,7 +283,7 @@ out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 

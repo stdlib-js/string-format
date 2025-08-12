@@ -41,38 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-format
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-format = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var format = require( 'path/to/vendor/umd/string-format/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.format;
-})();
-</script>
+var format = require( '@stdlib/string-format' );
 ```
 
 #### format( str, ...args )
@@ -221,7 +215,7 @@ The `precision` may be specified as a decimal integer or as an asterisk characte
 -   For `s` specifiers, the `precision` specifies the maximum number of characters to be written to the output.
 -   For floating point specifiers (`f`, `F`, `e`, `E`), the `precision` specifies the number of digits after the decimal point to be written to the output (by default, this is `6`).
 -   For `g` and `G` specifiers, the `precision` specifies the maximum number of significant digits to be written to the output.
--   For integer specifiers (`d`, `i`, `u`, `b`, `o`, `x`, `X`), the `precision` specifies the minimum number of digits to be written to the output. If the value to be written is shorter than this number, the result is padded with zeros on the left. The value is not truncated even if the result is longer. For 
+-   For integer specifiers (`d`, `i`, `u`, `b`, `o`, `x`, `X`), the `precision` specifies the minimum number of digits to be written to the output. If the value to be written is shorter than this number, the result is padded with zeros on the left. The value is not truncated even if the result is longer.
 
 Alternatively, the `precision` may be specified as an asterisk character (`*`), in which case the argument preceding the conversion specification is used as the minimum number of digits.
 
@@ -249,13 +243,8 @@ out = format( str, 7 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-format@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var format = require( '@stdlib/string-format' );
 
 var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'
@@ -271,11 +260,6 @@ out = format( '%10s %10s', 'a', 'b' );
 
 out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 // returns 'a b c'
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>

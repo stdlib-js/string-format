@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.2.3-esm/index.mjs';
 ```
 
 #### format( str, ...args )
@@ -231,7 +231,7 @@ out = format( str, 7 );
 <body>
 <script type="module">
 
-import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs';
+import format from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-format@v0.2.3-esm/index.mjs';
 
 var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'

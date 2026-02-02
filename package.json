@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/string-base-format-interpolate": "^0.2.3",
+    "@stdlib/string-base-format-interpolate": "^0.2.4",
     "@stdlib/string-base-format-tokenize": "^0.2.4"
   },
   "devDependencies": {
